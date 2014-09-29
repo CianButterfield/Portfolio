@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h2 class="nameHeader">Cian Butterfield Portfolio - @ViewBag.Head</h2>
+            <div class="logo">
+                <img src="@ViewBag.Logo" class="logoImg" />
+            </div>
+            <nav class="headNav">
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                &nbsp;|&nbsp;
+            <a href="@Url.Action("Index", "About")">About</a>
+                &nbsp;|&nbsp;
+            <a href="@Url.Action("Index", "Work")">Work</a>
+                &nbsp;|&nbsp;
+            <a href="@Url.Action("Index", "Contact")">Contact</a>
+            </nav>
+        </header>
+        <div class="bodyContainer">
+            @RenderBody()
+        </div>
+        <footer>
+            <div class="footLeft">
+                Copyright 2014 Cian Butterfield
+            </div>
+            <div class="footRight">
+                <nav class="footNav">
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                    &nbsp;|&nbsp;
+                <a href="@Url.Action("Index", "About")">About</a>
+                    &nbsp;|&nbsp;
+                <a href="@Url.Action("Index", "Work")">Work</a>
+                    &nbsp;|&nbsp;
+                <a href="@Url.Action("Index", "Contact")">Contact</a>
+                </nav>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>

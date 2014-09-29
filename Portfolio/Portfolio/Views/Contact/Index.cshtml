@@ -1,0 +1,43 @@
+﻿@model Portfolio.Models.ContactInformation
+
+@{
+    ViewBag.Title = "Contact";
+    ViewBag.Head = "Contact";
+    ViewBag.Logo = "http://cdn-img.easylogo.cn/gif/51/51700.gif"; 
+}
+
+<form action="@Url.Action("Index", "Contact")" method="post">
+    <div class="contact">
+        @Html.ValidationMessageFor(x => x.FirstName)
+        <br />
+        @Html.TextBoxFor(x => x.FirstName, new { @placeholder = "First Name" })
+    </div>
+    <div class="contact">
+        @Html.ValidationMessageFor(x => x.LastName)
+        <br />
+        @Html.TextBoxFor(x => x.LastName, new { @placeholder = "Last Name" })
+    </div>
+    <br />
+    <div class="contact">
+        @Html.ValidationMessageFor(x => x.Email)
+        <br />
+        @Html.TextBoxFor(x => x.Email, new { @placeholder = "Email" })
+    </div>
+    <div class="contact">
+        @Html.ValidationMessageFor(x => x.PhoneNumber)
+        <br />
+        @Html.TextBoxFor(x => x.PhoneNumber, new { @placeholder = "Phone Number" })
+    </div>
+    <br />
+    <div class="contact">
+        @Html.ValidationMessageFor(x => x.Comment)
+        <br />
+        @Html.TextAreaFor(x => x.Comment, new { @placeholder = "Comment" })
+    </div>
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

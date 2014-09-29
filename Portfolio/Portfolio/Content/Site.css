@@ -1,0 +1,196 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    min-height: 100%;
+    background: repeating-radial-gradient(circle, rgba(255, 0, 0, .15),rgba(255, 165, 0, 0.15),rgba(255, 255, 0, 0.15),rgba(0, 128, 0, 0.15),rgba(0, 0, 255, 0.15),rgba(75, 0, 130, 0.15),rgba(238, 130, 238, 0.15),rgba(75, 0, 130, 0.15),rgba(0, 0, 255, 0.15),rgba(0, 128, 0, 0.15),rgba(255, 255, 0, 0.15),rgba(255, 165, 0, 0.15),rgba(255, 0, 0, .15));
+}
+
+html{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+nav:hover{
+    background-color:black;
+}
+
+header{
+    text-align:center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logoImg{
+    display: inline-block;
+}
+
+h3{
+    text-align:center;
+    width: 100%;
+}
+
+.wrapper{
+    display:inline-block;
+    text-align:center;
+    min-height:100%;
+    min-width:100%;
+    position:relative;
+}
+
+.bodyContainer{
+    display:inline-block;
+    padding: 1%;
+    margin: 5px;
+    border: solid 1px;
+    margin-bottom:40px;
+    position:relative;
+}
+
+#home1{
+    display:block;
+    border: solid 1px;
+    max-height: 50%;
+    margin: 5px;
+}
+
+#home2{
+    display: inline-block;
+    border: solid 1px;
+    max-height: 50%;
+    margin: 0%; 
+    padding: 5px;
+    max-width: 30%;
+    text-wrap: normal;
+}
+
+#home3{
+    display: inline-block;
+    border: solid 1px;
+    max-height: 50%;
+    margin: 1%;
+    padding: 5px;
+    max-width: 30%;
+    text-wrap: normal;
+}
+
+#home4{
+    display: inline-block;
+    border: solid 1px;
+    max-height: 50%;
+    margin: 0%;
+    padding: 5px;
+    max-width:30%;
+    text-wrap: normal;
+}
+
+.contact{
+    display: inline-block;
+    margin: 5px;
+    width: 45%;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+footer{
+    display: block;
+    border: solid 1px;
+    bottom: 2px;
+    left: 5px;
+    right: 5px;
+
+    position: relative;
+    height: 30px;
+}
+
+.footLeft{
+    display:inline-block;
+    margin: 5px;
+    float:left;
+}
+
+.footRight{
+    display:inline-block;
+    margin: 5px;
+    float:right;
+}
+
+
+.nameHeader{
+
+}
+
+.headNav{
+    display:inline-block;
+    border:solid 1px;
+    padding: 5px;
+    text-align:center;
+}
+
+.work{
+    padidng: 5px;
+    margin: 5px;
+    display: inline-block;
+    width: 48%;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
