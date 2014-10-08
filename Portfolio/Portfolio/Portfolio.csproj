@@ -157,6 +157,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\BattleShip1.jpg" />
+    <Content Include="Content\Images\DragonSlayer1.jpg" />
+    <Content Include="Content\Images\GuessThatNumber1.jpg" />
+    <Content Include="Content\Images\Hangman1.jpg" />
+    <Content Include="Content\Images\Hangman2.jpg" />
+    <Content Include="Content\Images\HomeImg.jpeg" />
+    <Content Include="Content\Images\HomeImg2.jpg" />
+    <Content Include="Content\Images\Me.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -244,6 +252,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -262,6 +271,10 @@
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Views\Work\Battleship.cshtml" />
+    <Content Include="Views\Work\DragonSlayer.cshtml" />
+    <Content Include="Views\Work\Hangman.cshtml" />
+    <Content Include="Views\Work\GuessThatNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

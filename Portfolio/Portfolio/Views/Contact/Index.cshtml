@@ -2,11 +2,10 @@
 
 @{
     ViewBag.Title = "Contact";
-    ViewBag.Head = "Contact";
-    ViewBag.Logo = "http://cdn-img.easylogo.cn/gif/51/51700.gif"; 
+    ViewBag.Head = "Contact"; 
 }
 
-<form action="@Url.Action("Index", "Contact")" method="post">
+<form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
     <div class="contact">
         @Html.ValidationMessageFor(x => x.FirstName)
         <br />
@@ -29,7 +28,7 @@
         @Html.TextBoxFor(x => x.PhoneNumber, new { @placeholder = "Phone Number" })
     </div>
     <br />
-    <div class="contact">
+    <div class="contact comment">
         @Html.ValidationMessageFor(x => x.Comment)
         <br />
         @Html.TextAreaFor(x => x.Comment, new { @placeholder = "Comment" })

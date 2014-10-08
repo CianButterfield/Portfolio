@@ -12,9 +12,6 @@
     <div class="wrapper">
         <header>
             <h2 class="nameHeader">Cian Butterfield Portfolio - @ViewBag.Head</h2>
-            <div class="logo">
-                <img src="@ViewBag.Logo" class="logoImg" />
-            </div>
             <nav class="headNav">
                 <a href="@Url.Action("Index", "Home")">Home</a>
                 &nbsp;|&nbsp;
@@ -24,11 +21,21 @@
                 &nbsp;|&nbsp;
             <a href="@Url.Action("Index", "Contact")">Contact</a>
             </nav>
+            <br />
+            <div class="logo">
+                <img src="@ViewBag.Logo" class="logoImg" />
+            </div>
         </header>
-        <div class="bodyContainer">
+        <div id="container" class="bodyContainer">
             @RenderBody()
         </div>
-        <footer>
+        
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+    <footer>
             <div class="footLeft">
                 Copyright 2014 Cian Butterfield
             </div>
@@ -44,9 +51,4 @@
                 </nav>
             </div>
         </footer>
-
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </div>
-</body>
 </html>

@@ -17,7 +17,7 @@ namespace Portfolio.Models
         public string FirstName { get; set; }
         [Required, MaxLength(200)]
         public string LastName { get; set; }
-        [Required, MaxLength(200)]
+        [Required, MaxLength(200), EmailAddress(ErrorMessage= "Not a valid Email")]
         public string Email { get; set; }
         [Required, MaxLength(20)]
         public string PhoneNumber { get; set; }
